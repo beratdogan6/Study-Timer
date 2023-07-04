@@ -3,50 +3,52 @@
 
 <head>
     <title>Pomodoro Timer</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./background.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <script src="https://kit.fontawesome.com/2e11129327.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="main-container">
         <div class="timer-container">
-            <div class="timer-border">
-                <div class="settings-button-container">
-                    <button class="settings-button" id="settingsBtn">Settings <i class="fa-solid fa-gear"></i></button>
-                </div>
+            <div class="settings-button-container">
+                <button class="settings-button" id="settingsBtn">
+                    <span>Settings</span>
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+            </div>
 
-                <div class="timer-header">
-                    <h1 id="currentTask">Study Time</h1>
-                </div>
+            <div class="timer-header">
+                <h1 id="currentTask">Study Time</h1>
+            </div>
 
-                <div id="timer"></div>
+            <div id="timer"></div>
 
-                <div id="controls">
-                    <button class="button" id="start">Start</button>
-                    <button class="button" id="stop" disabled>Stop</button>
-                    <button class="button" id="reset">Reset</button>
-                </div>
+            <div id="controls" class="controls">
+                <button class="button" id="start">Start</button>
+                <button class="button" id="stop" disabled>Stop</button>
+                <button class="button" id="reset">Reset</button>
             </div>
         </div>
 
         <div class="settings-container">
-            <div class="settings-border">
-                <h2>Settings</h2>
+            <div class="settings-header">
+                <h1>Settings</h1>
+            </div>
 
-                <div style="align-items: center;">
-                    <label for="study-time">Study Time:</label>
-                    <input type="number" id="study-time" min="1" value="25">
-                </div>
+            <div class="input-line">
+                <label for="study-time">Study Time:</label>
+                <input type="number" id="study-time" min="1" value="25">
+            </div>
 
-                <div style="align-items: center;">
-                    <label for="break-time">Break Time:</label>
-                    <input type="number" id="break-time" min="1" value="5">
-                </div>
+            <div class="input-line">
+                <label for="break-time">Break Time:</label>
+                <input type="number" id="break-time" min="1" value="5">
+            </div>
 
-                <div>
-                    <button class="button" id="cancelBtn">Cancel</button>
-                    <button class="button" id="saveBtn">Save</button>
-                </div>
+            <div id="controls" class="controls">
+                <button class="button" id="cancelBtn">Cancel</button>
+                <button class="button" id="saveBtn">Save</button>
             </div>
         </div>
     </div>

@@ -79,17 +79,17 @@ $(document).ready(function () {
 
     $('#saveBtn').click(() => {
         $('.settings-container').css('display', 'none');
-        $('.timer-container').css('display', 'flex');
+        $('.timer-container').css('display', 'block');
         resetTimer();
     });
 
     $('#cancelBtn').click(() => {
         $('.settings-container').css('display', 'none');
-        $('.timer-container').css('display', 'flex');
+        $('.timer-container').css('display', 'block');
     });
 
     $('#settingsBtn').click(() => {
-        $('.settings-container').css('display', 'flex');
+        $('.settings-container').css('display', 'block');
         $('.timer-container').css('display', 'none');
     });
 
