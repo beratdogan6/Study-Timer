@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.timer-border {
+    border: 1px solid #000;
+    padding: 25px;
+    border-radius: 8%;
+}
+
+.timer-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#timer {
+    font-size: 48px;
+    margin: 20px;
+}
+
+#controls {
+    margin-bottom: 30px;
+}
+
+.button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.settings-button {
+    align-items: center;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+
+.settings-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.settings-button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.settings-border {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #000;
+    padding: 25px;
+    border-radius: 2%;
+}
+
+input {
+    font-size: 14px;
+    width: 25%;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+label {
+    font-size: 18px;
+}
